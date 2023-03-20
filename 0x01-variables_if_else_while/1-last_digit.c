@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * description: 'assign a random number to the variable n each time it is executed'
+ * description: 'assign a random number to the variable n each time  executed'
  * Return: always 0
  */
 int main(void)
