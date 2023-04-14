@@ -4,7 +4,7 @@
  * @s1: first string
  * @s2: second string
  * @n: byte
- * Return:
+ * Return: s
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -34,7 +34,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (i < m)
 	{
 		if (i <= L1)
-		
 			s[i] = s1[i];
 		if (i >= L1)
 		{
@@ -45,4 +44,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	s[i] = '\0';
 	return (s);
-}
+
