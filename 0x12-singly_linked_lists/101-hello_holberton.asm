@@ -1,5 +1,3 @@
-section .data
-    format db 'Hello, Holberton', 10, 0
 
 section .text
     global main
@@ -17,3 +15,4 @@ main:
     mov rsp, rbp
     pop rbp
     ret
+format db 'Hello, Holberton', 10, 0
