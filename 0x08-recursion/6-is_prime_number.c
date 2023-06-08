@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * is_divisble - check if the integer is prime number
+ * is_divisible - Check if the integer is prime number
  * @numb: integer to be checked
  * @dvs: divisible
  * Return: always 0
@@ -16,8 +16,8 @@ int is_divisible(int numb, int dvs)
 	return (is_divisible(numb, dvs + 1));
 }
 /**
- * is_prime_number - returns 1 if the input integer
- * is a prime number, otherwise return 0
+ * is_prime_number - Returns 1 if the input integeris a prime number
+ * otherwise return 0
  * @n: integer number to check if is prime
  * Return: always 0
  */
