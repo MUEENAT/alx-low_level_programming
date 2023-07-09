@@ -7,15 +7,27 @@
 
 void print_binary(unsigned long int n)
 {
-	int value = 0;
-	unsigned long int index = 0;
+	unsigned long int bin = 1UL << (sizeof(unsigned long int) * 8 - 1);
 
-	if (index > 63)
+	while ((n & bin) == 0 && bin != 0)
 	{
-		return (-1);
+		bin >>= 1;
 	}
-	value = (n >> index) & 1;
+	if (bin == 0)
 	{
-		return (value);
+		_putchar('0');
+		return;
+	}
+	while (bin != 0)
+	{
+		if ((n & bin) != 0)
+		{
+			_putchar('1');
+		}
+		else
+		{
+			_putchar('0');
+		}
+		bin >>= 1;
 	}
 }
