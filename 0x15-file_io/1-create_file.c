@@ -34,7 +34,7 @@ int create_file(const char *filename, char *text_content)
 		W = write(descriptor, text_content, length);
 		close(descriptor);
 
-		if (W != length)
+		if (length != W)
 		{
 			return (-1);
 		}
